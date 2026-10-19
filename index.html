@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="page-wrapper">
+
+        <div class="form-container">
+
+            <header class="form-header">
+                <span class="eyebrow">PERSONAL DETAILS</span>
+                <h1>Tell us about yourself</h1>
+                <p>Please provide the information below. Fields marked with * are required.</p>
+            </header>
+
+            <form action="#" method="post">
+
+                <section class="form-section">
+                    <div class="section-heading">
+                        <span class="section-number">01</span>
+                        <div>
+                            <h2>Basic Information</h2>
+                            <p>Your personal contact details</p>
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName">First name <span>*</span></label>
+                            <input type="text" id="firstName" name="firstName"
+                                   placeholder="e.g. John" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Last name <span>*</span></label>
+                            <input type="text" id="lastName" name="lastName"
+                                   placeholder="e.g. Smith" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address <span>*</span></label>
+                        <input type="email" id="email" name="email"
+                               placeholder="you@example.com" required>
+                        <small>We'll use this email to contact you.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone"
+                               placeholder="+92 300 1234567">
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="birthDate">Date of birth</label>
+                            <input type="date" id="birthDate" name="birthDate">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender">
+                                <option value="">Select gender</option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <div class="section-heading">
+                        <span class="section-number">02</span>
+                        <div>
+                            <h2>Address Information</h2>
+                            <p>Where you currently live</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Street address <span>*</span></label>
+                        <input type="text" id="address" name="address"
+                               placeholder="House number and street" required>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="city">City <span>*</span></label>
+                            <input type="text" id="city" name="city"
+                                   placeholder="Enter city" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="postalCode">Postal code</label>
+                            <input type="text" id="postalCode" name="postalCode"
+                                   placeholder="Postal code">
+                        </div>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="province">State / Province</label>
+                            <input type="text" id="province" name="province"
+                                   placeholder="Enter province">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country">Country <span>*</span></label>
+                            <select id="country" name="country" required>
+                                <option value="">Select country</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Australia">Australia</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <div class="section-heading">
+                        <span class="section-number">03</span>
+                        <div>
+                            <h2>Education & Experience</h2>
+                            <p>Tell us about your background</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="education">Highest education</label>
+                        <select id="education" name="education">
+                            <option value="">Select education level</option>
+                            <option value="matric">Matric</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="bachelor">Bachelor's degree</option>
+                            <option value="master">Master's degree</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="institute">School or institution</label>
+                        <input type="text" id="institute" name="institute"
+                               placeholder="Enter institution name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="occupation">Current occupation</label>
+                        <input type="text" id="occupation" name="occupation"
+                               placeholder="e.g. Student, Web Developer">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skills">Skills and experience</label>
+                        <textarea id="skills" name="skills" rows="5"
+                                  placeholder="Describe your skills and experience..."></textarea>
+                        <small>Include relevant skills, projects, or experience.</small>
+                    </div>
+                </section>
+
+                <section class="form-section">
+                    <div class="section-heading">
+                        <span class="section-number">04</span>
+                        <div>
+                            <h2>Additional Details</h2>
+                            <p>Anything else you would like to share</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="website">Personal website or portfolio</label>
+                        <input type="url" id="website" name="website"
+                               placeholder="https://yourwebsite.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="about">Tell us about yourself</label>
+                        <textarea id="about" name="about" rows="6"
+                                  placeholder="Share your goals, interests, and anything else..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reason">What are you looking to achieve?</label>
+                        <textarea id="reason" name="reason" rows="5"
+                                  placeholder="Describe your goals..."></textarea>
+                    </div>
+                </section>
+
+                <div class="confirmation">
+                    <input type="checkbox" id="confirmation"
+                           name="confirmation" required>
+                    <label for="confirmation">
+                        I confirm that the information provided is accurate.
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="reset" class="btn-secondary">Clear form</button>
+                    <button type="submit" class="btn-primary">
+                        Submit information <span aria-hidden="true">→</span>
+                    </button>
+                </div>
+
+                <p class="form-footer">
+                    Your information should be handled securely and respectfully.
+                </p>
+
+            </form>
+        </div>
+
+    </main>
+
+</body>
+</html>

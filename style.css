@@ -1,0 +1,333 @@
+
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #263b58;
+    --primary-hover: #192b43;
+    --text: #252c36;
+    --muted: #737d8c;
+    --border: #dce1e8;
+    --background: #f4f6f9;
+    --white: #ffffff;
+    --accent: #a66b42;
+    --error: #c34242;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+/* ===== Page Layout ===== */
+.page-wrapper {
+    padding: 55px 20px;
+}
+
+.form-container {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 48px 54px;
+    background: var(--white);
+    border: 1px solid #e6e9ef;
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(25, 43, 67, 0.055);
+}
+
+/* ===== Header ===== */
+.form-header {
+    padding-bottom: 32px;
+    margin-bottom: 36px;
+    border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.form-header h1 {
+    margin-bottom: 10px;
+    color: var(--primary);
+    font-size: 32px;
+    line-height: 1.3;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+}
+
+.form-header p {
+    max-width: 520px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* ===== Form Sections ===== */
+.form-section {
+    margin-bottom: 42px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 28px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e9edf2;
+}
+
+.section-number {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #e1e6ec;
+    border-radius: 6px;
+    color: var(--accent);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.section-heading h2 {
+    color: var(--primary);
+    font-size: 19px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.section-heading p {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* ===== Input Groups ===== */
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333d4b;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.form-group label span {
+    color: var(--error);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 13px 15px;
+    background: var(--white);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input,
+.form-group select {
+    min-height: 49px;
+}
+
+.form-group textarea {
+    min-height: 125px;
+    resize: vertical;
+    line-height: 1.7;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a0a8b4;
+    font-size: 13px;
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #627d9e;
+    box-shadow: 0 0 0 3px rgba(38, 59, 88, 0.09);
+}
+
+.form-group small {
+    display: block;
+    margin-top: 7px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* ===== Two Column Fields ===== */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.form-grid .form-group {
+    min-width: 0;
+}
+
+/* ===== Confirmation ===== */
+.confirmation {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 8px 0 28px;
+    padding: 18px;
+    background: #f8f9fb;
+    border: 1px solid #e8ebf0;
+    border-radius: 6px;
+}
+
+.confirmation input {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    accent-color: var(--primary);
+    cursor: pointer;
+}
+
+.confirmation label {
+    color: #4f5968;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* ===== Buttons ===== */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding-top: 6px;
+}
+
+.form-actions button {
+    min-height: 48px;
+    padding: 12px 22px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+}
+
+.btn-secondary {
+    border-color: var(--border) !important;
+    background: var(--white);
+    color: var(--text);
+}
+
+.btn-secondary:hover {
+    background: #f5f6f8;
+    border-color: #b9c1cd !important;
+}
+
+/* ===== Footer Note ===== */
+.form-footer {
+    margin-top: 24px;
+    color: #8a93a0;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 650px) {
+    .page-wrapper {
+        padding: 20px 12px;
+    }
+
+    .form-container {
+        padding: 28px 20px;
+        border-radius: 8px;
+    }
+
+    .form-header h1 {
+        font-size: 26px;
+    }
+
+    .form-header {
+        margin-bottom: 28px;
+        padding-bottom: 25px;
+    }
+
+    .form-section {
+        margin-bottom: 34px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .section-heading {
+        gap: 12px;
+    }
+
+    .section-heading h2 {
+        font-size: 17px;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .form-container {
+        padding: 23px 15px;
+    }
+
+    .form-header h1 {
+        font-size: 23px;
+    }
+
+    .section-number {
+        width: 32px;
+        height: 32px;
+    }
+}
